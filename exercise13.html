@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 13 & 14</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<p>Input your Name :</p>
+<input type="text" name="pname">
+<input id="button1" type="button" value="Click to set default name" /><br>
+
+<p>jQuery<span id="spanid" style="color:red"> Exercises</span>.</p>
+<input id="button2" type="button" value="Click to see the changes" />
+
+<script>
+	$(document).ready(function(){ 
+	  $('#button1').click(function(){ 
+	  var text = $('input[name="pname"]').val('ADRIAN');
+   });
+});
+	$(document).ready(function(){ 
+  $('#button2').click(function(){ 
+   $("#spanid").html(" Exercises Solution");
+   });
+});
+</script>
+</body>
+</html>

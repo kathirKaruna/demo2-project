@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 11_12</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+	table, th, td {
+    border: 1px solid blue;
+    background-color: black;
+    color: white;
+}
+</style>	
+</head>
+<body>
+<h1><u>Disable Link</u></h1>
+<a href="https://www.w3resource.com/jquery-exercises/">jQuery Exercises, Practice, Solution</a>
+ <p></p>
+  <input id="button1" type="button" value="Click to remove the link!" /><br>
+
+ <h1><u>Remove Specific table Cell</u></h1> <br>
+
+  <table id="mytable">
+ <tr>
+  <th>Firstname</th>
+  <th>Lastname</th>
+  </tr>
+  <tr id="r1">
+  <td>Rahul</td>
+  <td>Sethi</td>
+  </tr>
+  <tr id="r2">
+   <td>Sara</td>
+   <td>Rayy</td>
+   </tr>
+   </table>
+   <p> <input id="button2" type="button" value="Click to remove 2nd Row." /></p>
+
+<script>
+	$(document).ready(function(){
+		$("#button1").click(function(){
+			$("a").removeAttr("href");
+		});
+	});
+	$(document).ready(function(){
+		$("#button2").click(function(){
+			$("#r2").remove();
+		});
+	});
+
+
+
+</script>
+</body>
+</html>

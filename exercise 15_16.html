@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 15 & 16</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<h1><u>Add Attribute</u></h1>
+First name: <input id="iid" type="text" name="fname" ><br><br>
+<input id="button1" type="button" value="Click to add an attribute" />
+
+<h1><u>Find Class Name</u></h1><br>
+
+<ul class="tabs">
+<li class="ff0000">Red</li>
+<li class="000000">Black</li>
+<li class="ffd700">Gold</li>
+</ul>
+<p id="li"></p>
+<script>
+	$(document).ready(function(){
+		$("#button1").click(function(){
+         $("#iid").attr('placeholder', 'input your name here');
+		});
+	});
+
+$("li").click(function() {
+   var colorClass = this.className;
+   $("#li").text(colorClass)
+});
+</script>
+
+
+
+</body>
+</html>
